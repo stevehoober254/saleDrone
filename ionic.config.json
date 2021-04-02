@@ -1,0 +1,7 @@
+{
+  "name": "saleDrone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
