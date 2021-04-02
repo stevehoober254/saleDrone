@@ -1,4 +1,4 @@
-# mobile UI for drone selling application
+# Mobile UI for drone selling application
 
 # Made with :
  * Ionic
