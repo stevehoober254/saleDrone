@@ -1,20 +1,93 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!-- <ion-toolbar > -->
+<ion-item lines="none">
+  <ion-button slot="start" color="medium" id="round">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-button>
+  <ion-button slot="end" icon-only color="medium" id="round" (click)="search = true" *ngIf="!search">
+    <ion-icon mode="ios"  name="search" ></ion-icon>
+  </ion-button>
+  <ion-button slot="end" icon-only color="medium" id="round"*ngIf="search" (click)="search = false">
+    <ion-icon mode="ios"  name="close" ></ion-icon>
+  </ion-button>
+  <ion-searchbar *ngIf="search" mode="ios" placeholder="Search Drones"></ion-searchbar>
+</ion-item>
+<!-- </ion-toolbar> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="header">
+    <ion-label id="title">MAVIC SERIES</ion-label><br>
+    <ion-text id="tagline">
+      Powerful and Foldable for Aerial Adventure
+    </ion-text>
   </div>
+  <!-- Marvic 2 Pro -->
+  <div class="product">
+    <ion-row>
+      <ion-title class="ion-no-padding">Marvic 2 Pro</ion-title>
+      <ion-label id="link" color="secondary">Drone</ion-label>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card (click)="viewDrone()" button="true">
+          <ion-card-header color="light">
+            <img src="assets/images/mavic_pro.jpg">
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label id="name">DJI Marvic 2 Pro Private custom</ion-label><br>
+            <ion-label id="price">$1500.00</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card (click)="viewDrone()" button="true">
+          <ion-card-header color="light">
+            <img src="assets/images/dji.jpg">
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label id="name">DJI Marvic 2 Pro Private custom</ion-label><br>
+            <ion-label id="price">$1500.00</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+  <!-- END -->
+
+  <!-- Marvic 2 Air -->
+  <div class="product">
+    <ion-row>
+      <ion-title class="ion-no-padding">Marvic 2 Air</ion-title>
+      <ion-label id="link" color="secondary">Drone</ion-label>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card (click)="viewDrone()" button="true">
+          <ion-card-header color="light">
+            <img src="assets/images/marvi_air.jpg">
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label id="name">DJI Marvic 2 Pro Private custom</ion-label><br>
+            <ion-icon name="disc" color="success"></ion-icon>&nbsp;
+            <ion-label color="success">Customize</ion-label><br>
+            <ion-label id="price">$199.00</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card (click)="viewDrone()" button="true">
+          <ion-card-header color="light">
+            <img src="assets/images/wing_replacement.jpg">
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label id="name">DJI Marvic 2 Pro Private custom</ion-label><br>
+            <ion-icon name="disc" color="danger"></ion-icon>&nbsp;
+            <ion-label color="danger">Customize</ion-label><br>
+            <ion-label id="price">$899.00</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+  <!-- END -->
+
 </ion-content>

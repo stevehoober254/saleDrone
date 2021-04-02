@@ -1,0 +1,38 @@
+:host{
+    margin-top: 20px;
+    background-color: gray
+}
+
+.description{
+    padding:20px;
+    #name{
+        font-size: 2em;
+        font-weight: bold;
+        color: black;   
+    }
+    ion-badge{
+        margin-top: 10px;
+        float: right;
+        width: 30px;
+        height:30px;
+        ion-icon{
+            width:25px;
+            height:25px;
+        }
+    }
+    #desc{
+        font-size: 1em;
+        line-height: .5;
+        color: gray
+    }
+}
+.price_tag{
+    #pr{
+        font-size: 1.3em;
+        font-weight: bold;
+        color: black;
+    }
+    #dt{
+        color: gray;
+    }
+}

@@ -1,0 +1,42 @@
+:host{
+    background-color: gray;
+}
+.items{
+    padding:20px;
+    #bdg{
+        background-color:lightgrey;
+        border-radius: 50%;
+    }
+    #title{
+        font-size: 1.2em;
+        font-weight: bold;
+        color: black;
+    }
+    #trash{
+        float: right;
+        margin-top: 85px;
+    }
+    #name{
+        font-size: 1.2em;
+    }
+    #pr{
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+    }
+}
+#btn{
+    position: fixed;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+}
+.address{
+    padding:20px;
+    background-color: var(--ion-color-light);
+}
+#pr{
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}

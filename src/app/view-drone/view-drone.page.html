@@ -1,0 +1,60 @@
+<ion-item lines="none">
+  <ion-button (click)="back()" slot="start" color="medium" id="round">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-button>
+</ion-item>
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <img src="assets/images/mavic_pro.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/images/mavic_pro.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/images/mavic_pro.jpg">
+    </ion-slide>
+  </ion-slides>
+
+  <div class="description">
+    <ion-icon name="cart" color="secondary"></ion-icon>&nbsp;
+    <ion-label color="secondary">Drone</ion-label><br>
+    <ion-label id="name">Marvic 2 Pro</ion-label>
+    <ion-badge>
+      <ion-icon color="warning" src="assets/images/badge.svg"></ion-icon>
+    </ion-badge>
+    <br><br>
+    <ion-text id="desc">
+      Made in Sweden, Hasselblad cameras are renowned for their iconic ergonomic design, uncompromising image quality
+      and swedish craftsmanship. Since 1941
+    </ion-text>
+    <br><br>
+    <ion-list lines="none">
+      <ion-item>
+        <ion-col size="2">
+          <ion-button icon-only color="medium" shape="round">
+            <ion-icon color="secondary" name="location"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-text>
+            Building 4, No 21 Dowtown California, Center of california
+          </ion-text>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon size="large" color="primary" name="chevron-forward"></ion-icon>
+        </ion-col>
+      </ion-item>
+    </ion-list>
+    <br>
+    <div class="price_tag">
+      <ion-label id="pr">$1599.00</ion-label><br>
+      <ion-label id="dt">Duty dedacted</ion-label>
+    </div>
+    <br><br>
+    <ion-button expand="full" shape="round" (click)="goToCart()">
+      Add to cart
+    </ion-button>
+  </div>
+
+</ion-content>

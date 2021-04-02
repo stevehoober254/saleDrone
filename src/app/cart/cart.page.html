@@ -1,0 +1,116 @@
+<ion-item lines="none">
+  <ion-button (click)="back()" slot="start" color="medium" id="round">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-button>
+  <ion-title color="primary">Order center</ion-title>
+</ion-item>
+
+<ion-content>
+<div class="items">
+  <ion-label id="title">My Order</ion-label> <br><br>
+  <ion-row class="ion-no-padding">
+    <ion-col size="3" class="ion-no-padding">
+      <img src="assets/images/mavic_pro.jpg">
+    </ion-col>
+    <ion-col>
+      <ion-label id="name">
+        DJI Marvic 2 Pro Private custom
+      </ion-label><br>
+      <ion-label id="pr">
+        $1500.00
+      </ion-label><br>
+      <ion-list lines="none" class="ion-no-padding">
+        <ion-item style="width:45%" class="ion-no-padding">
+          <ion-col id="bdg" class="ion-text-center">
+              <ion-icon  color="dark" name="chevron-back-outline" (click)="minusCount()"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            {{getCount()}}
+          </ion-col>
+          <ion-col id="bdg" class="ion-text-center">
+              <ion-icon  (click)="addCount()" color="dark" name="chevron-forward"></ion-icon>
+          </ion-col>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+    <ion-col size="1">
+      <ion-icon tappable id="trash" color="danger" name="trash-bin"></ion-icon>
+    </ion-col>
+  </ion-row>
+</div>
+<div class="address">
+  <ion-label id="addr">California</ion-label><br>
+  <ion-list lines="none">
+    <ion-item button="true"> 
+      <ion-col size="2">
+        <ion-button icon-only color="medium" shape="round">
+          <ion-icon color="secondary" name="location"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-text>
+          Building 4, No 21 Dowtown California, Center of california
+        </ion-text>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon size="large" color="primary" name="chevron-forward"></ion-icon>
+      </ion-col>
+    </ion-item>
+  </ion-list>
+</div>
+<div class="address">
+  <ion-label id="addr">California</ion-label><br>
+  <ion-list lines="none">
+    <ion-item button="true">
+      <ion-col size="2">
+        <ion-button icon-only color="light" >
+          <ion-icon  src="assets/images/visa.svg"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-text>
+          My Visa Card
+        </ion-text> <br>
+        <ion-label>623******** **78</ion-label>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon size="large" color="primary" name="chevron-forward"></ion-icon>
+      </ion-col>
+    </ion-item>
+  </ion-list>
+</div>
+<div class="address">
+  <ion-label id="addr">Order Details</ion-label><br>
+  <ion-list lines="none">
+    <ion-item>
+      <ion-col size="8">
+        <ion-label>Price</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label>$1599.00</ion-label>
+      </ion-col>
+    </ion-item>
+    <ion-item>
+      <ion-col size="8">
+        <ion-label>Discount</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label>$50.00</ion-label>
+      </ion-col>
+    </ion-item>
+    <ion-item>
+      <ion-col size="8">
+        <ion-label>Need to Pay</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label id="pr">$1549.00</ion-label>
+      </ion-col>
+    </ion-item>
+  </ion-list>
+</div>
+
+<ion-button expand="full" shape="round" id="btn1">
+  Pay to Buy
+</ion-button>
+</ion-content>
+
