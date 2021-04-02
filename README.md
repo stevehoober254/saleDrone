@@ -12,6 +12,7 @@
  * Run npm install
  * Run npm serve  
 
-# contains three screens
+# Contains three screens
+# UI Credits to Alan Love
 
 <img src="src/assets/images/ui.png">
