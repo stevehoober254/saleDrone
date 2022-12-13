@@ -13,6 +13,7 @@
  * Run npm serve  
 
 # Contains three screens
-# UI Credits to Alan Love
+# UI Credits to Alan Love.
+
 
 <img src="src/assets/images/ui.png">
