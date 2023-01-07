@@ -1,6 +1,6 @@
 # IONIC UI SERIES
 
-## Mobile UI for drone selling application
+## Drone Store Mobile Application
 
 # Made with :
  * Ionic
